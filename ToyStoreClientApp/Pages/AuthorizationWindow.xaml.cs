@@ -59,6 +59,7 @@ namespace ToyStoreClientApp.Pages
                     break;
                 }
             }
+
             try
             {
                 if (count == 0 && userId != 0)
