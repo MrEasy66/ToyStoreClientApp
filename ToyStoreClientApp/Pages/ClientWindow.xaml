@@ -1,0 +1,28 @@
+﻿<Window x:Class="ToyStoreClientApp.Pages.ClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToyStoreClientApp.Pages"
+        mc:Ignorable="d"
+        Title="ClientWindow" Height="500" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Background="Aqua" Height="90" Width="400" HorizontalAlignment="Left">
+            <TextBlock Text="Имя пользователя: " x:Name="txtBlockName" Margin="10 10 0 0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Text="Фамилия пользователя: " x:Name="txtBlockSurname" Margin="10 10 0 10" HorizontalAlignment="Left"/>
+        </StackPanel>
+        <StackPanel Background="Aqua" Height="45" Width="410" HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal">
+            <Button x:Name="btnOffer" Content="Перс. предложения" Margin="5 0 0 0" Width="180" Click="btnOffer_Click"/>
+            <Button x:Name="btnOrder" Content="Сделать заявку" Margin="5 0 0 0" Width="180" Click="btnOrder_Click"/>
+        </StackPanel>
+        <StackPanel Background="Aqua" Height="50" Width="410" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button x:Name="btnBack" Content="Назад" Margin="15 0 0 0" Click="btnBack_Click"/>
+            <Button x:Name="btnExit" Content="Выход" Margin="40 0 0 0" Click="btnExit_Click"/>
+        </StackPanel>
+        <Frame Grid.Row="1" Name="mainFrame" NavigationUIVisibility="Hidden" ContentRendered="mainFrame_ContentRendered"/>
+    </Grid>
+</Window>
