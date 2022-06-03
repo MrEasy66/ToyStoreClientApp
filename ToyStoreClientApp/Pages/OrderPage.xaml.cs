@@ -44,6 +44,5 @@ namespace ToyStoreClientApp.Pages
                 MessageBox.Show(ex.Message.ToString());
             }
         }
-        }
     }
 }
